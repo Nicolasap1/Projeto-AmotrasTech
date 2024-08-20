@@ -20,6 +20,6 @@ def description(request):
     """Pagina de Descrição"""
     return render(request, 'core/description.html')
 
-def promo(request):
+def checkout(request):
     """Pagina de Descrição"""
-    return render(request, 'core/promo.html')
+    return render(request, 'core/checkout.html')

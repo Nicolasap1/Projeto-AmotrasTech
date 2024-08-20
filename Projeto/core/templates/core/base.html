@@ -1,6 +1,25 @@
+
+<header>
+    <nav> 
+        <ul>
+            <li><img src="Logotipo.png" alt="logotipo"/></li>
+            <ul>
+                <li>Opções Menu</li>
+            </ul>
+            <li>
+                <div>
+                    <input type="text" placeholder="Buscar..."/>
+                    <button>Buscar</button>
+                </div>
+            </li>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'login' %}">Entrar</a></li>
+            <li><a href="{% url 'cart' %}">Carrinho</a></li>
+        </ul>
+    </nav>
+</header>
+
 {% block content %} {% endblock content %}
-
-
 
 <footer>
     <p>Construido no Ano de 2024</p>
