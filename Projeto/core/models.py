@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser,PermissionsMixin
 from django.urls import reverse
+
 class User(AbstractUser,PermissionsMixin):
     username = models.CharField(
         db_column = 'tx_username',
@@ -68,6 +69,15 @@ class Category(models.Model):
         blank=False,
         unique=True,
         verbose_name='Name'
+    )
+
+    tipo = models.CharField(
+        db_column='tx_tipo',
+        max_length=128,
+        null=False,
+        blank=False,
+        unique=True,
+        verbose_name='tipo'
     )
 
     def __str__(self):
