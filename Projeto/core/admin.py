@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Post, User, Category
+from .models import  User
 
 class ModelAdminBase(admin.ModelAdmin):
     list_per_page = 20
@@ -16,18 +16,3 @@ class UserAdmin(ModelAdminBase):
         'is_active',
     )
 
-@admin.register(Category)
-class CatetoryAdmin(ModelAdminBase):
-    list_display = (
-        'name',
-    )
-
-@admin.register(Post)
-class PostAdmin(ModelAdminBase):
-    list_display = (
-        'title',
-        'content',
-        'author',
-        'category',
-        'created_at',
-    )
