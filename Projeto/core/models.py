@@ -83,18 +83,34 @@ class Cadastro_Livro(models.Model):
         null=False,
         verbose_name='Content'
     )
+    
+    criado_por = models.CharField(
+        db_column='tx_author',
+        max_length= 25,
+        default='valor_padrao',
+        blank=False,
+        verbose_name='Author'
+    )
+
+    image = models.ImageField(
+        db_column='tx_image',
+        blank=True,
+        null=False,
+        verbose_name= 'Imagem'
+    )
+
     author = models.ForeignKey(
         'User',
         on_delete=models.DO_NOTHING,
         db_column='id_author',
         null=False,
-        verbose_name='Author'
+        verbose_name='Adicionado por:'
     )
     category = models.ForeignKey(
         'Category',
         on_delete=models.DO_NOTHING,
         db_column='id_category',
-        null=True,
+        null=False,
         verbose_name='Category'
     )
     created_at = models.DateTimeField(
@@ -125,7 +141,7 @@ class Cadastro_Usuario(models.Model):
         null=False,
         verbose_name='Email'
     )
-    
+
     password = models.CharField(
         max_length=8, 
         db_column='tx_password',
