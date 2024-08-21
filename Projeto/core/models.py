@@ -59,8 +59,59 @@ class User(AbstractUser,PermissionsMixin):
         managed = True
         db_table = 'auth_User'
 
+class Category(models.Model):
+    name = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        managed = True
+        db_table = 'category'
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
 
+class Cadastro_Livro(models.Model):
+    title = models.CharField(
+        db_column='tx_title',
+        max_length=128,
+        null=False,
+        verbose_name='Title'
+    )
+    content = models.TextField(
+        db_column='tx_content',
+        null=False,
+        verbose_name='Content'
+    )
+    author = models.ForeignKey(
+        'User',
+        on_delete=models.DO_NOTHING,
+        db_column='id_author',
+        null=False,
+        verbose_name='Author'
+    )
+    category = models.ForeignKey(
+        'Category',
+        on_delete=models.DO_NOTHING,
+        db_column='id_category',
+        null=True,
+        verbose_name='Category'
+    )
+    created_at = models.DateTimeField(
+        db_column='dt_created',
+        auto_now_add=True,
+        null=True,
+        verbose_name='Created at'
+    )
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        managed = True
+        db_table = 'cadastro_livro'
+        verbose_name = 'Cadastro_Livro'
+        verbose_name_plural = 'Cadastros_Livros'
 
 
 

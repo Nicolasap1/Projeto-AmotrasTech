@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import  User
+from .models import  Cadastro_Livro,User, Category
 
 class ModelAdminBase(admin.ModelAdmin):
     list_per_page = 20
@@ -16,3 +16,18 @@ class UserAdmin(ModelAdminBase):
         'is_active',
     )
 
+@admin.register(Category)
+class CatetoryAdmin(ModelAdminBase):
+    list_display = (
+        'name',
+    )
+
+@admin.register(Cadastro_Livro)
+class CadastroLAdmin(ModelAdminBase):
+    list_display = (
+        'title',
+        'content',
+        'author',
+        'category',
+        'created_at',
+    )

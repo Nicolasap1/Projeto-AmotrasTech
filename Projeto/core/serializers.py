@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Post
+from .models import Cadastro_Livro
 
-class PostSerializer(serializers.ModelSerializer):
+class CadastroLSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Post
+        model = Cadastro_Livro
         fields = '__all__'
