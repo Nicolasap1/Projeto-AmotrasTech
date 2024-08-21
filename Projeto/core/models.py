@@ -86,6 +86,7 @@ class Post(models.Model):
         null=False,
         verbose_name='Title'
     )
+    
     content = models.TextField(
         db_column='tx_content',
         null=False,
