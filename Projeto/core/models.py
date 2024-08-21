@@ -113,6 +113,42 @@ class Cadastro_Livro(models.Model):
         verbose_name = 'Cadastro_Livro'
         verbose_name_plural = 'Cadastros_Livros'
 
+class Cadastro_Usuario(models.Model):
+    name = models.CharField(
+        db_column='tx_title',
+        max_length=128,
+        null=False,
+        verbose_name='Name'
+    )
+    email = models.CharField(
+        db_column='tx_name',
+        null=False,
+        verbose_name='Email'
+    )
+    
+    password = models.CharField(
+        max_length=8, 
+        db_column='tx_password',
+        null=False,
+        verbose_name='Password',
+    )
+
+    created_at = models.DateTimeField(
+        db_column='dt_created',
+        auto_now_add=True,
+        null=True,
+        verbose_name='Created at'
+    )
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        managed = True
+        db_table = 'cadastro_usuario'
+        verbose_name = 'Cadastro_Usuario'
+        verbose_name_plural = 'Cadastros_Usuarios'
+
 
 
 
