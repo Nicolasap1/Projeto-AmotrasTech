@@ -106,6 +106,7 @@ class Cadastro_Livro(models.Model):
         null=False,
         verbose_name='Adicionado por:'
     )
+    
     category = models.ForeignKey(
         'Category',
         on_delete=models.DO_NOTHING,
