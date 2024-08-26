@@ -1,0 +1,6 @@
+<h2>Books from API 3</h2>
+<ul>
+  <li *ngFor="let books of livro">titulo: {{books.title}} <br> Conteudo: {{books.content}} <br> Autor: {{books.criado_por}} <br> Imagen: {{books.image}} <br> Criado: {{books.created_at}} <br> Adicionado por: {{books.author}} <br> Genero:{{books.category}}</li>
+</ul>
+
+<router-outlet></router-outlet>

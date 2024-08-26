@@ -5,28 +5,28 @@ import {Observable} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CategoryService {
-  private apiUrl = 'http://localhost:8000/apiCategoria/';
+export class BookService {
+  private apiUrl = 'http://localhost:8000/apiCadastro_Livro/';
 
   constructor(private http: HttpClient) {}
 
-  getCategories(): Observable<any[]> {
+  getBooks(): Observable<any[]> {
     return this.http.get<any[]>(this.apiUrl);
   }
 
-  getCategory(id: number): Observable<any> {
+  getBook(id: number): Observable<any> {
     return this.http.get<any[]>(`${this.apiUrl}${id}/`);
   }
 
-  createCategory(item: any): Observable<any> {
+  createBook(item: any): Observable<any> {
     return this.http.post<any>(this.apiUrl, item);
   }
 
-  updateCategory(id: number, item: any): Observable<any> {
+  updateBook(id: number, item: any): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}${id}/`, item);
   }
 
-  deleteCategory(id: number): Observable<any> {
+  deleteBook(id: number): Observable<any> {
     return this.http.delete<any>(`${this.apiUrl}${id}`);
   }
 }
