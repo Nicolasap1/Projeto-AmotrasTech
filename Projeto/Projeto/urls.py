@@ -8,10 +8,9 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register(r'Cadastro_Livro', viewsets.CadastroLViewSet)
 router.register(r'Cadastro_Usuario', viewsets.CadastroUViewSet)
-
+router.register(r'Categoria', viewsets.CategoryViewSet)
 urlpatterns = [
     path('', lambda request: redirect('admin/', permanent=False)),
     path('admin/', admin.site.urls),
-    path('', include('core.urls')),
     path('api', include(router.urls)),
 ]
