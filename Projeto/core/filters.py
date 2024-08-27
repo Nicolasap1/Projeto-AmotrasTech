@@ -13,12 +13,13 @@ class CadastroLFilter(django_filters.FilterSet):
         fields = ['title','content','criado_por','author','image','category']
 
 class CadastroUFilter(django_filters.FilterSet):
-    title = django_filters.CharFilter(lookup_expr='icontains')
-    author = django_filters.CharFilter(lookup_expr='icontains', field_name='author__username')
-
+    name = django_filters.CharFilter(lookup_expr='icontains')
+    email = django_filters.CharFilter(lookup_expr='icontains')
+    password = django_filters.CharFilter(lookup_expr='icontains')
+    created_at = django_filters.DateFilter(lookup_epx= 'contains')
     class Meta:
         model = Cadastro_Usuario
-        fields = ['author']
+        fields = ['name', 'email', 'password','created_at']
 
 class CategoryFilter(django_filters.FilterSet):
     name = django_filters.CharFilter(lookup_expr='icontains')
