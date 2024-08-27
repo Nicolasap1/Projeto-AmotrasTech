@@ -78,6 +78,13 @@ class Cadastro_Livro(models.Model):
         null=False,
         verbose_name='Title'
     )
+    description = models.CharField(
+        db_column= 'text_description',
+        max_length=128,
+        default='valor_padrao',
+        verbose_name='Description'
+    )
+
     content = models.TextField(
         db_column='tx_content',
         null=False,
