@@ -8,21 +8,32 @@ import {CategoryService} from "./services/category.service";
 import { NovaabaComponent } from './novaaba/novaaba.component';
 import { UsersComponent } from './users/users.component';
 import { LivrosComponent } from './livros/livros.component';
-import {BookService} from "./services/livros.service";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MenuComponent } from './menu/menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardsComponent } from './cards/cards.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NovaabaComponent,
     UsersComponent,
-    LivrosComponent
+    LivrosComponent,
+    MenuComponent,
+    CardsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

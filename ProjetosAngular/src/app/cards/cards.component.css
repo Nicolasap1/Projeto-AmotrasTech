@@ -1,0 +1,10 @@
+.container{
+  text-align: center;
+}
+
+.card {
+  margin-top: 50px;
+  margin-left: 20px;
+  display: inline-block;
+  text-align: center;
+}
