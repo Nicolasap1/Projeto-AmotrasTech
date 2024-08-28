@@ -1,12 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {BookService} from "../services/livros.service";
 
+
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.component.html',
-  styleUrl: './cards.component.css'
+  selector: 'app-design',
+  templateUrl: './design.component.html',
+  styleUrl: './design.component.css'
 })
-export class CardsComponent implements OnInit {
+export class DesignComponent implements OnInit {
   livro: any[] = [];
   constructor(private bookService: BookService,
   ) {
@@ -20,4 +21,6 @@ export class CardsComponent implements OnInit {
       this.livro = data;
     });
   }
+
+
 }
