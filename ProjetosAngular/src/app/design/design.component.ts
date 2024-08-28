@@ -16,6 +16,7 @@ export class DesignComponent implements OnInit {
     this.loadBooks();
   }
 
+
   loadBooks() {
     this.bookService.getBooks().subscribe((data) => {
       this.livro = data;

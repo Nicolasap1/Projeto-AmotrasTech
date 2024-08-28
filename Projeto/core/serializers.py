@@ -6,6 +6,12 @@ class CadastroLSerializer(serializers.ModelSerializer):
         model = Cadastro_Livro
         fields = '__all__'
 
+    def get_imagem_url(self, obj):
+        request = self.context.get('request')
+        if obj.imagem and hasattr(obj.imagem, 'url'):
+            return request.build_absolute_uri(obj.imagem.url)
+        return None     
+
 class CadastroUSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cadastro_Usuario
