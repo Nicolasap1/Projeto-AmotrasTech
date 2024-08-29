@@ -109,7 +109,8 @@ class Cadastro_Livro(models.Model):
         db_column='tx_image',
         blank=True,
         null=False,
-        verbose_name= 'Imagem'
+        verbose_name= 'Imagem',
+        upload_to='livros/'
     )
 
     author = models.ForeignKey(

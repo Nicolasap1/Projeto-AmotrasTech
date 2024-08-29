@@ -10,8 +10,7 @@ import {BookService} from "../services/livros.service";
 export class DesignComponent implements OnInit {
   livro: any[] = [];
   constructor(private bookService: BookService,
-  ) {
-  }
+  ) { }
   ngOnInit() {
     this.loadBooks();
   }
@@ -21,6 +20,7 @@ export class DesignComponent implements OnInit {
     this.bookService.getBooks().subscribe((data) => {
       this.livro = data;
     });
+
   }
 
 

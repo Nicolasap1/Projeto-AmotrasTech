@@ -5,6 +5,7 @@ import {NovaabaComponent} from "./novaaba/novaaba.component";
 import {UsersComponent} from "./users/users.component";
 import {LivrosComponent} from "./livros/livros.component";
 import {LoginComponent} from "./login/login.component";
+import {DesignComponent} from "./design/design.component";
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'categories', component: NovaabaComponent },
   { path: 'livros', component: LivrosComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'design', component: DesignComponent},
  ];
 
 @NgModule({
