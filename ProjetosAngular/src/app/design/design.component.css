@@ -16,17 +16,14 @@ body{
   display: inline-flex;
   text-align: center;
   width: 250px;
-  height: 350px;
-}
-
-footer {
-  bottom: 0px;
-  padding: 0px;
-  width: 100%;
-  position: fixed;
+  height: 460px;
 }
 
 img{
+  margin-top: 10px;
   width:120px;
   height:170px;
+}
+p{
+  text-align: justify;
 }

@@ -91,12 +91,6 @@ class Cadastro_Livro(models.Model):
         verbose_name='Content'
     )
 
-    price = models.CharField(
-        db_column='tx_price',
-        verbose_name='Price',
-        default='R$ 00,00'
-    )
-    
     criado_por = models.CharField(
         db_column='tx_author',
         max_length= 25,
