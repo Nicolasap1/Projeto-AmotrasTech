@@ -164,6 +164,8 @@ class Cadastro_Usuario(models.Model):
         null=True,
         verbose_name='Created at'
     )
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['name']
 
     def __str__(self):
         return self.name

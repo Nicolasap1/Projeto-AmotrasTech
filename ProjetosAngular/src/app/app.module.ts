@@ -3,32 +3,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NovaabaComponent } from './novaaba/novaaba.component';
-import { UsersComponent } from './users/users.component';
-import { LivrosComponent } from './livros/livros.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DesignComponent } from './design/design.component';
 import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NovaabaComponent,
-    UsersComponent,
-    LivrosComponent,
     DesignComponent,
     LoginComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    CadastroComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
 
   ],
   providers: [

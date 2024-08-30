@@ -1,28 +1,26 @@
 body{
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .container{
-  margin-top: 30px;
   text-align: center;
   padding: 20px;
-
 }
 
 .card {
   margin:10px;
   display: inline-flex;
   text-align: center;
-  width: 250px;
-  height: 460px;
+  width: 270px;
+  height: 480px;
 }
 
 img{
   margin-top: 10px;
-  width:120px;
-  height:170px;
+  width:150px;
+  height:220px;
 }
 p{
   text-align: justify;
