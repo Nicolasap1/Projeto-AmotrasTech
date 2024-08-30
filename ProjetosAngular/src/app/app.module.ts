@@ -30,7 +30,6 @@ import { ViewComponent } from './view/view.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-
   ],
   providers: [
     provideAnimationsAsync()

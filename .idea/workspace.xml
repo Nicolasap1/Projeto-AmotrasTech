@@ -1,4 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0e6b085-36b3-4654-a387-c0c325c64596" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/Descrição.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/Dom_Casmurro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/Eternamente_voce_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/O_menino_maluquinho.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/Romeu_e_Julieta.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/alice.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/alice_no_pais_das_maravilhas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/livro_informatica_avancada_compressed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livros e descrição/menino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetosAngular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetosAngular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetosAngular/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetosAngular/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetosAngular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetosAngular/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetosAngular/src/app/design/design.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetosAngular/src/app/design/design.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetosAngular/src/app/view/view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetosAngular/src/app/view/view.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetosAngular/src/app/view/view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetosAngular/src/app/view/view.component.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2lMefCUESSvXnzApLxfbNXEgyVP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/nicol/Documents/Progama/Projeto AmotrasTech 2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\nicol\\Documents\\Progama\\Projeto AmotrasTech 2\\ProjetosAngular\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.19072.23" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0e6b085-36b3-4654-a387-c0c325c64596" name="Changes" comment="" />
+      <created>1724994473589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724994473589</updated>
+      <workItem from="1724994474599" duration="4699000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>
